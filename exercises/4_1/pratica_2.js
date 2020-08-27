@@ -3,6 +3,11 @@
 let a = 8;
 let b = 3;
 
-numero = (a > b);
+if (a > b){
 
-console.log (numero);
+    console.log(a)
+    
+} else {
+
+    console.log(b)
+}
