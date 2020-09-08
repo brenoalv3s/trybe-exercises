@@ -99,7 +99,17 @@
 			image.src = 'https://picsum.photos/200'
 			elementLeftDiv.appendChild(image);
 
-			
+			// Exercise - 8
+
+			let elementList = document.createElement('ul');
+			elementRightDiv.appendChild(elementList);
+			let arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+			for (let num in arrayNumbers){
+				let elementLi = document.createElement('li');
+				elementLi.innerHTML = arrayNumbers[num];
+				elementList.appendChild(elementLi);
+			}
+
 
     </script>
   </body>
