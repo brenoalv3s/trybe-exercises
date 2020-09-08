@@ -112,11 +112,40 @@
 
 			// Exercise - 9
 
-			for (let i = 1; i <= 3; i =+ 1){
+			for (let i = 1; i <= 3; i++){
 				let elementH3 = document.createElement ('h3');
 				elementH3.innerHTML = 'Exercícios' + i;
 				elementDiv.appendChild(elementH3);
 			} 
+
+			// Parte - 2
+
+			// Exercise - 1
+
+			const title = document.getElementsByTagName('h1')[0];
+			title.className = 'title';
+			
+			 // Exercise 2
+			 const elementsH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index++) {
+        elementsH3[index].className = 'description';
+			}
+			
+			// Exercise 3
+      const divLeftContent = document.getElementsByClassName('left-content')[0];
+      elementDiv.removeChild(divLeftContent);
+
+      // Exercise 4
+      const divRightContent = document.getElementsByClassName('right-content')[0];
+      divRightContent.style.marginRight='auto';
+
+      // Exercise 5
+    const divCenterContent = document.getElementsByClassName('center-content')[0];
+    divCenterContent.parentNode.style.backgroundColor = 'green';
+
+      // Exercise 6
+    elementList.lastChild.remove();
+    elementList.lastChild.remove();
 
     </script>
   </body>
