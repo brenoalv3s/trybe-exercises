@@ -1,0 +1,38 @@
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header {
+	background-color: rgb(6, 185, 132);
+	border-radius: 5px;
+	color: whitesmoke;
+	margin: 50px 50px auto 50px;
+	text-align: center; 
+}
+.paragraph-header {
+ 	margin: -15px;
+}
+.form {
+	border-radius: 15px;
+	margin: 50px 50px auto 50px;
+}
+#nome {
+	width: 100%;
+}
+#sobrenome {
+	width: 100%;
+}
+#email {
+	width: 100%;
+}
+#cpf {
+	width: 100%;
+}
+#logradouro {
+	width: 100%;
+}
+#cep {
+	width: 100%;
+}
+#cidade {
+	width: 100%;
+}
