@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cadastro Currículo</title>
+		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<h1>Formulário de Cadastro de Currículo</h1>
+		<p class="paragraph-header"><em>Cadastre o seu currículo e receba as vagas diárias</em></p>
+	</header>
+	<form>
+		<fieldset class="form">
+			<legend>Candidato:</legend>
+			<input type="text" name="nome" id="nome" placeholder="Nome" required maxlength="40"><br><br>
+			<input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required maxlength="40"><br><br>
+			<input type="email" name="email" id="email" placeholder="E-mail" required maxlength="50"><br><br>
+			<input type="text" name="cpf" id="cpf" placeholder="CPF" required maxlength="11">
+		</fieldset>
+		<fieldset class="form">
+			<legend>Endereço:</legend>
+			<input type="text" name="logradouro" id="logradouro" placeholder="Logradouro" required maxlength="200"><br><br>
+			<input type="text" name="cep" id="cep" placeholder="CEP" required maxlength="28"><br><br>
+			<input type="text" name="cidade" id="cidade" placeholder="Cidade" required maxlength="28"><br>
+			<p>Estado: 
+			<select name="uf" id="uf" required>
+				<option value="">Selecione</option>
+				<option value="AC">AC</option>
+				<option value="AL">AL</option>
+				<option value="AM">AM</option>
+				<option value="AP">AP</option>
+				<option value="BA">BA</option>
+				<option value="CE">CE</option>
+				<option value="DF">DF</option>
+				<option value="ES">ES</option>
+				<option value="GO">GO</option>
+				<option value="MA">MA</option>
+				<option value="MG">MG</option>
+				<option value="MS">MS</option>
+				<option value="MT">MT</option>
+				<option value="PA">PA</option>
+				<option value="PB">PB</option>
+				<option value="PE">PE</option>
+				<option value="PI">PI</option>
+				<option value="PR">PR</option>
+				<option value="RJ">RJ</option>
+				<option value="RN">RN</option>
+				<option value="RS">RS</option>
+				<option value="RO">RO</option>
+				<option value="RR">RR</option>
+				<option value="SC">SC</option>
+				<option value="SE">SE</option>
+				<option value="SP">SP</option>
+				<option value="TO">TO</option>
+			 </select></p>
+		</fieldset>
+		<fieldset class="form">
+			<legend>Moradia:</legend>
+			<input type="radio" name="moradia" id="moradia">
+			<label for="moradia">Casa</label><br><br>
+			<input type="radio" name="moradia" id="moradia">
+			<label for="moradia">Apartamento</label>
+		</fieldset>
+		<fieldset class="form">
+			<legend>Dados do último emprego:</legend>
+			<textarea name="resumo-curriculo" id="resumo-curriculo" placeholder="Resumo do Currículo" required cols="60" rows="5" maxlength="1000"></textarea>
+		</fieldset>
+		<fieldset class="form">
+			<legend>Informações do cargo:</legend>
+			<input type="text" name="cargo" id="cargo" placeholder="Cargo" required maxlength="40"><br><br>
+			<input type="text" name="descricao-cargo" id="cargo" placeholder="Descrição do Cargo" required maxlength="500">
+			<p> Data de início: <input type="date" name="data-inicio" id="data-inicio" required></p>
+		</fieldset><br><br>
+		<div>
+			<input type="file" name="arquivo" id="arquivo" placeholder="Currículo">
+			<button type="submit" id="enviar">Enviar</button>
+			<button type="reset"id="limpar">Limpar</button>
+	  </div>
+	</form>
+	<footer class="rodape">Creado por: Breno Alves</footer>
+<script src="script.js"></script>    
+</body>
+</html>
