@@ -14,24 +14,17 @@
 	<form>
 		<fieldset class="form">
 			<legend>Candidato:</legend>
-			<label for="nome">Nome:</label>
-			<input type="text" name="nome" id="nome" required maxlength="40"><br><br>
-			<label for="sobrenome">Sobrenome:</label>
-			<input type="text" name="sobrenome" id="sobrenome" required maxlength="40"><br><br>
-			<label for="email">E-mail:</label>
-			<input type="email" name="email" id="email" required maxlength="50"><br><br>
-			<label for="cpf">CPF:</label>
-			<input type="text" name="cpf" id="cpf" required maxlength="11">
+			<input type="text" name="nome" id="nome" placeholder="Nome" required maxlength="40"><br><br>
+			<input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required maxlength="40"><br><br>
+			<input type="email" name="email" id="email" placeholder="E-mail" required maxlength="50"><br><br>
+			<input type="text" name="cpf" id="cpf" placeholder="CPF" required maxlength="11">
 		</fieldset>
 		<fieldset class="form">
 			<legend>Endereço:</legend>
-			<label for="logradouro">Logradouro:</label>
-			<input type="text" name="logradouro" id="logradouro" required maxlength="200"><br><br>
-			<label for="cep">CEP:</label>
-			<input type="text" name="cep" id="cep" required maxlength="28"><br><br>
-			<label for="cidade">Cidade:</label>
-			<input type="text" name="cidade" id="cidade" required maxlength="28"><br>
-			<p>Estado:</p>
+			<input type="text" name="logradouro" id="logradouro" placeholder="Logradouro" required maxlength="200"><br><br>
+			<input type="text" name="cep" id="cep" placeholder="CEP" required maxlength="28"><br><br>
+			<input type="text" name="cidade" id="cidade" placeholder="Cidade" required maxlength="28"><br>
+			<p>Estado: 
 			<select name="uf" id="uf" required>
 				<option value="">Selecione</option>
 				<option value="AC">AC</option>
@@ -61,7 +54,7 @@
 				<option value="SE">SE</option>
 				<option value="SP">SP</option>
 				<option value="TO">TO</option>
-			 </select>
+			 </select></p>
 		</fieldset>
 		<fieldset class="form">
 			<legend>Moradia:</legend>
@@ -70,9 +63,20 @@
 			<input type="radio" name="moradia" id="moradia">
 			<label for="moradia">Apartamento</label>
 		</fieldset>
+		<fieldset class="form">
+			<legend>Dados do último emprego:</legend>
+			<textarea name="resumo-curriculo" id="resumo-curriculo" placeholder="Resumo do Currículo" required cols="60" rows="5" maxlength="1000"></textarea>
+		</fieldset>
+		<fieldset class="form">
+			<legend>Informações do cargo:</legend>
+			<input type="text" name="cargo" id="cargo" placeholder="Cargo" required maxlength="40"><br><br>
+			<input type="text" name="descricao-cargo" id="cargo" placeholder="Descrição do Cargo" required maxlength="500">
+			<p> Data de início: <input type="date" name="data-inicio" id="data-inicio" required></p>
+		</fieldset><br><br>
+		<input type="file" name="arquivo" id="arquivo" placeholder="Currículo">
+		<button type="submit" id="enviar">Enviar</button>
+		<button type="reset"id="limpar">Limpar</button>
 	</form>
-
-
 <script src="script.js"></script>    
 </body>
 </html>

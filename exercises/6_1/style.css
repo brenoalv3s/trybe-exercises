@@ -13,26 +13,55 @@ body {
 }
 .form {
 	border-radius: 15px;
-	margin: 50px 50px auto 50px;
+	margin: 30px 50px auto 50px;
 }
 #nome {
 	width: 100%;
+	font-size: 15px;
+	border-radius: 5px;
 }
 #sobrenome {
 	width: 100%;
+	font-size: 15px;
+	border-radius: 5px;
 }
 #email {
 	width: 100%;
+	font-size: 15px;
+	border-radius: 5px;
 }
 #cpf {
 	width: 100%;
+	font-size: 15px;
+	border-radius: 5px;
 }
 #logradouro {
 	width: 100%;
+	font-size: 15px;
+	border-radius: 5px;
 }
 #cep {
 	width: 100%;
+	font-size: 15px;
+	border-radius: 5px;
 }
 #cidade {
 	width: 100%;
+	font-size: 15px;
+	border-radius: 5px;
+}
+#resumo-curriculo {
+	width: 100%;
+	border: 0;
+}
+#cargo {
+	width: 100%;
+	font-size: 15px;
+	border-radius: 5px;
+}
+#arquivo {
+	margin: auto 50px auto 50px;
+}
+#enviar {
+	margin-left: 770px;
 }
