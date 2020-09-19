@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro Currículo</title>
+	<link rel="stylesheet" href="CSS/bulma.min.css">
+	<link rel="stylesheet" href="
+	CSS/style.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="title">Formulário de Cadastro de Currículo</h1>
+		<h2 class="subtitle"><em>Cadastre o seu currículo e receba as vagas diárias</em></h2>
+	</header>
+	<form>
+		<div class="field">
+			<legend>Candidato:</legend>
+			<div class="control">
+				<input class="input is-primary" type="text" name="nome" id="nome" placeholder="Nome" required
+					maxlength="40"><br><br>
+				<input class="input is-primary" type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required
+					maxlength="40"><br><br>
+				<input class="input is-primary" type="email" name="email" id="email" placeholder="E-mail" required
+					maxlength="50"><br><br>
+				<input class="input is-primary" type="text" name="cpf" id="cpf" placeholder="CPF" required maxlength="11">
+			</div>
+		</div>
+		<div class="field">
+			<legend>Endereço:</legend>
+			<div class="control">
+				<input class="input is-primary" type="text" name="logradouro" id="logradouro" placeholder="Logradouro" required
+					maxlength="200"><br><br>
+				<input class="input is-primary" type="text" name="cep" id="cep" placeholder="CEP" required
+					maxlength="28"><br><br>
+				<input class="input is-primary" type="text" name="cidade" id="cidade" placeholder="Cidade" required
+					maxlength="28"><br><br>
+			</div>
+			<div class="field">
+				<legend>Estado:</legend>
+				<div class="control">
+					<div class="select is-primary">
+						<select name="uf" id="uf" required>
+							<option value="">Selecione</option>
+							<option value="AC">AC</option>
+							<option value="AL">AL</option>
+							<option value="AM">AM</option>
+							<option value="AP">AP</option>
+							<option value="BA">BA</option>
+							<option value="CE">CE</option>
+							<option value="DF">DF</option>
+							<option value="ES">ES</option>
+							<option value="GO">GO</option>
+							<option value="MA">MA</option>
+							<option value="MG">MG</option>
+							<option value="MS">MS</option>
+							<option value="MT">MT</option>
+							<option value="PA">PA</option>
+							<option value="PB">PB</option>
+							<option value="PE">PE</option>
+							<option value="PI">PI</option>
+							<option value="PR">PR</option>
+							<option value="RJ">RJ</option>
+							<option value="RN">RN</option>
+							<option value="RS">RS</option>
+							<option value="RO">RO</option>
+							<option value="RR">RR</option>
+							<option value="SC">SC</option>
+							<option value="SE">SE</option>
+							<option value="SP">SP</option>
+							<option value="TO">TO</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="field">
+				<legend>Moradia:</legend>
+				<div class="control">
+
+					<label class="radio">
+						<input type="radio" name="moradia">
+						Casa
+					</label><br>
+
+					<label class="radio">
+						<input type="radio" name="moradia">
+						Apartamento
+					</label>
+				</div>
+			</div>
+			<div class="field">
+				<legend>Dados do último emprego:</legend>
+				<div class="control">
+					<textarea class="textarea is-primary" name="resumo-curriculo" placeholder="Resumo do Currículo" required
+						cols="60" rows="5" maxlength="1000"></textarea>
+				</div>
+			</div>
+			<div class="field">
+				<legend>Informações do cargo:</legend>
+				<div class="control">
+					<input class="input is-primary" type="text" name="cargo" placeholder="Cargo" required maxlength="40"><br><br>
+					<input class="input is-primary" type="text" name="descricao-cargo" placeholder="Descrição do Cargo" required
+						maxlength="500"><br><br>
+					<legend> Data de início:</legend>
+					<input class="input is-primary" type="date" name="data-inicio" id="data-inicio" required>
+				</div>
+			</div><br><br>
+			<div class="buttons">
+				<div class="control">
+				<input class="button is-primary" type="file">
+				<input class="button is-primary" type="submit">
+					<input class="button is-primary" type="reset" id="limpar">
+			</div>
+		</div>
+					
+	</form>
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+				<strong>Cadastro de Currículo</strong> by <strong>Breno Alves</strong>
+			</p>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body {
+	padding: 80px;
+	margin: auto;
+}
+header {
+	text-align: center;
+	margin: 15px;
+}
+footer {
+	bottom: 0;
+}
