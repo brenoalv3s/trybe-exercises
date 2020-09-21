@@ -1,0 +1,235 @@
+/*Exercício 1
+Bem-vindo ao Flexbox Froggy, um jogo onde você pode ajudar Froggy e seus amigos ao escrever código CSS! Guie o sapo à vitória-régia na direita usando a propriedade justify-content, que alinha itens horizontalmente e aceita os seguintes valores:
+
+flex-start: Itens se alinham à esquerda do container.
+flex-end: Itens se alinham à direita do container.
+center: Itens se alinham no centro do container.
+space-between: Itens se alinham com distância igual entre eles.
+space-around: Itens se alinham com distância igual em torno deles.
+Por exemplo, justify-content: flex-end; moverá o sapo para a direita.*/
+#pond {
+	display: flex;
+	justify-content: flex-end;
+}
+/*Exercício 2
+Use justify-content de novo para levar os sapos às suas vitórias-régias. Lembre-se que essa propriedade CSS alinha os itens horizontalmente e aceita os seguintes valores:
+
+flex-start: Itens se alinham à esquerda do container.
+flex-end: Itens se alinham à direita do container.
+center: Itens se alinham no centro do container.
+space-between: Itens se alinham com distância igual entre eles.
+space-around: Itens se alinham com distância igual em torno deles.*/
+#pond {
+	display: flex;
+	justify-content: center;
+}
+/*Exercício 3
+Ajude todos os três sapos a encontrar suas vitórias-régias usando justify-content. Desta vez, as vitórias-régias têm muito espaço em torno delas.
+
+Caso você esqueça os possíveis valores de uma propriedade, passe o cursor sobre a propriedade para visualizá-los. Tente passar o cursor sobre justify-content.*/
+#pond {
+	display: flex;
+	justify-content: space-around;
+}
+/*Exercício 4
+Agora as vitórias-régias nos cantos desviaram-se para a costa, aumentando o espaço em torno delas. Use justify-content. Desta vez, as vitórias-régias têm espaço igual entre elas.*/
+#pond {
+	display: flex;
+	justify-content: space-between;
+}
+/*Exercício 5
+Agora use align-items para levar os sapos ao fundo da lagoa. Essa propriedade CSS alinha os itens verticalmente e aceita os seguintes valores:
+
+flex-start: Itens se alinham na parte de cima do container.
+flex-end: Itens se alinham na parte de baixo do container.
+center: Itens se alinham no centro vertical do container.
+baseline: Items se alinham na linha da base do container.
+stretch: Itens se esticam para preencher o container.*/
+#pond {
+	display: flex;
+	align-items: flex-end;
+}
+/*Exercício 6
+Leve o sapo ao centro da lagoa usando uma combinação de justify-content e align-items.*/
+#pond {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*Exercício 7
+Os sapos precisam atravessar a lagoa de novo, desta vez para algumas vitórias-régias com bastante espaço em torno delas. Use uma combinação de justify-content e align-items.*/
+#pond {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+/*Exercício 8
+Os sapos precisam ficar na mesma ordem das vitórias-régias usando flex-direction. Esta propriedade CSS define a direção em que os itens são posicionados no container e aceita os seguintes valores:
+
+row: Itens são posicionados na mesma direção do texto.
+row-reverse: Itens são posicionados na direção oposta à do texto.
+column: Itens são posicionados de cima para baixo.
+column-reverse: Itens são posicionados de baixo para cima.*/
+#pond {
+	display: flex;
+	flex-direction: row-reverse;
+}
+/*Exercício 9
+Ajude os sapos a encontrar sua coluna de vitórias-régias usando flex-direction. Esta propriedade CSS define a direção em que os itens são posicionados no container e aceita os seguintes valores:
+
+row: Itens são posicionados na mesma direção do texto.
+row-reverse: Itens são posicionados na direção oposta à do texto.
+column: Itens são posicionados de cima para baixo.
+column-reverse: Itens são posicionados de baixo para cima.*/
+#pond {
+	display: flex;
+	flex-direction: column;
+}
+/*Exercício 10 
+Ajude os sapos a encontrar suas próprias vitórias-régias. Elas parecem estar próximas, mas você precisará de ambas propriedades, flex-direction e justify-content, para levá-los lá.
+
+Note que quando você define a direção para uma linha ou coluna reversa, start e end também são reversos.*/
+#pond {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+/*Exercício 11 
+Ajude os sapos a encontrar suas vitórias-régias usando flex-direction e justify-content.
+
+Note que quando a direção é em coluna, justify-content muda para a vertical e align-items para a horizontal.*/
+#pond {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+/*Exercício 12
+Ajude os sapos a encontrar suas vitórias-régias usando flex-direction e justify-content.*/
+#pond {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+}
+/*Exercício 13
+Ajude os sapos a encontrar suas vitórias-régias usando flex-direction, justify-content e align-items.*/
+#pond {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: flex-end;
+}
+/*Exercício 14
+Às vezes, reverter a ordem de uma coluna ou de um container não é suficiente. Nesses casos, podemos aplicar a propriedade order para itens individuais. Por padrão, itens tem um valor de 0, mas nós podemos usar essa propriedade para alterar para um valor inteiro positivo ou negativo.
+
+Use a propriedade order para reordenar os sapos de acordo com suas vitórias-régias.*/
+#pond {
+	display: flex;
+}
+
+.yellow {
+	order: 1;
+}
+/*Exercício 15
+Use a propriedade order para levar o sapo vermelho à sua vitória-régia.*/
+#pond {
+	display: flex;
+}
+
+.red {
+	order: -2;
+}
+/*Exercício 16
+Outra propriedade que você pode aplicar para itens individuais é align-self. Esta propriedade aceita os mesmos valores que align-items e seus valores são usados para o item específico.*/
+#pond {
+	display: flex;
+	align-items: flex-start;
+}
+
+.yellow {
+	align-self: flex-end;
+}
+/*Exercício 17
+Combine order e align-self para levar os sapos aos seus destinos.*/
+#pond {
+	display: flex;
+	align-items: flex-start;
+}
+
+.yellow {
+	order: 1;
+	align-self: flex-end;
+}
+/*Exercício 18
+Ah, não! Os sapos estão todos apertados em uma única linha de vitórias-régias. Espalhe-os usando a propriedade flex-wrap, que aceita os seguintes valores:
+
+nowrap: Todos os itens são apertados em uma única linha.
+wrap: Itens se separam em linhas adicionais.
+wrap-reverse: Itens se separam em linhas adicionais em reverso.*/
+#pond {
+	display: flex;
+	flex-wrap: wrap;
+}
+/*Exercício 19
+Ajude esse exército de sapos a formar três colunas ordenadas usando uma combinação de flex-direction e flex-wrap.*/
+#pond {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+/*Exercício 20
+As duas propriedades flex-direction e flex-wrap são usadas tão frequentemente juntas que uma propriedade abreviada flex-flow foi criada para combiná-las. Essa propriedade aceita o valor das duas propriedades separados por um espaço.
+
+Por examplo, você pode usar flex-flow: row wrap para aplicar a direção de linha e quebrar em múltiplas linhas.
+
+Tente usar flex-flow para refazer o nível anterior.*/
+#pond {
+	display: flex;
+	flex-flow: column wrap;
+}
+/*Exercício 21
+Os sapos estão espalhados por toda a lagoa, mas as vitórias-régias estão agrupadas no topo. Você pode usar align-content para definir como múltiplas linhas devem ser espaçadas uma das outras. Essa propriedade recebe os seguintes valores:
+
+flex-start: Linhas são agrupadas no topo do container.
+flex-end: Linhas são agrupadas no fundo do container.
+center:Linhas são agrupadas no centro vertical do container.
+space-between: Linhas são posicionadas com espaço igual entre elas.
+space-around: Linhas são posicionadas com espaço igual em torno delas.
+stretch: Linhas se esticam para preencher o container.
+Isso pode ser confuso, mas align-content determina o espaçamento entre linhas, enquanto align-items determina como as linhas como um todo são alinhadas dentro do container. Quando há só uma linha, align-content não tem nenhum efeito.*/
+#pond {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+/*Exercício 22
+Agora a correnteza agrupou as vitórias-régias no fundo. Use align-content para guiar os sapos até lá.*/
+#pond {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+/*exercício 23
+Os sapos fizeram uma festa, mas é hora de ir para casa. Use uma combinação de flex-direction e align-content para levá-los até suas vitórias-régias.*/
+#pond {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+	align-content: center;
+}
+/*Exercício 24
+Leve os sapos para casa uma última vez utilizando as propriedades CSS que você aprendeu:
+
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content*/
+#pond {
+	display: flex;
+	flex-flow: column-reverse wrap-reverse;
+	justify-content: center;
+	align-content: space-between;
+}
